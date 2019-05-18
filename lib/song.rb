@@ -62,7 +62,15 @@ class Song
       
       song
     end
-    
+    def self.create_from_filename(file_name)
+      song = self.new 
+      new_array = file_name.split(/[^a-zA-Z\s]|\s-\s/)
+      song.artist_name = new_array[0]
+      song.name = new_array[1]
+      song.save
+      song
+    end
+      
     
     
     
