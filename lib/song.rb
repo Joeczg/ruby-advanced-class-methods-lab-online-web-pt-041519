@@ -58,8 +58,8 @@ class Song
       new_array = []
       new_array= file_name.split(" - ")
       song.artist_name = new_array[0]
-      song.name = new_array[1].remove(".mp3")
-      song.save
+      song.name = new_array[1].delete(".mp3")
+      
       song
     end
     
