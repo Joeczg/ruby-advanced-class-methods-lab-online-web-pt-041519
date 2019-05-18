@@ -36,7 +36,7 @@ class Song
     
     def self.find_or_create_by_name(name)
             create_by_name(name)
-      find_name = find_by_name(name)
+           find_name = find_by_name(name)
       if find_name == nil
         song = self.new
         song.name = name 
@@ -47,6 +47,8 @@ class Song
       find_name
       end
     end
+    
+    def self.alphabetical
         
     
     
