@@ -42,6 +42,8 @@ class Song
         song.save
         song
       end
+    else
+      find_name
     end
         
     
