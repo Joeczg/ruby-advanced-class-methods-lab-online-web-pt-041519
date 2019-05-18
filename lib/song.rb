@@ -55,6 +55,7 @@ class Song
     
     def self.new_from_filename(file_name)
       song = self.new 
+      new_array = []
       new_array= file_name.split(" - ")
       song.artist_name = new_array[0]
       song.name = newarray[1].push(".mp3")
